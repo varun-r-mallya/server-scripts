@@ -25,7 +25,7 @@
 :43211 {
 	basicauth /* {
 		# caddy hash-password --plaintext yourpassword
-		varun $2a$14$ZY.l3V.ecHUWEO0phmNr9.ieQN15n5uIyrlLx4S4rLRKgm6YoGxGe
+		varun <hash>
 	}
 	reverse_proxy localhost:43210
 

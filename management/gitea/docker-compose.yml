@@ -1,0 +1,21 @@
+services:
+  gitea:
+    image: gitea/gitea:1.24.1
+    container_name: gitea
+    environment:
+      - USER_UID=1000
+      - USER_GID=1000
+      - GITEA__server__ROOT_URL=https://git.xeon.me/
+      - GITEA__server__SSH_DOMAIN=git.xeon.me
+      - GITEA__security__INSTALL_LOCK=true
+      - GITEA__service__DISABLE_REGISTRATION=true
+    restart: always
+    ports:
+      - "65400:3000"   # HTTP
+      - "22222:22"     # SSH (optional)
+    volumes:
+      - gitea_data:/data
+
+volumes:
+  gitea_data:
+

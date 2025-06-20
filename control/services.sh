@@ -4,6 +4,7 @@
 services=(
   "/home/xeon/management/monitoring"
   "/home/xeon/management/seanime"
+  "/home/xeon/management/gitea"
 )
 
 #echo "Reducing brightness"

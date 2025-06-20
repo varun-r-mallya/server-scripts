@@ -1,0 +1,1 @@
+0 3 */2 * * /home/xeon/management/nextcloud/nextcloud-snap-backup.sh >> /var/log/nextcloud-borg.log 2>&1
